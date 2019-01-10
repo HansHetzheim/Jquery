@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Hot || Cold</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Fjalla+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css"/>
+
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+
+	</head>
+	<body>
+
+		<header> <!--Header -->
+
+			<!-- Top Navigation -->
+			<nav>
+				<ul class="clearfix">
+					<li><a class="what" href="#">what is this?</a></li>
+					<li><a class="new" href="#">play again!</a></li>
+				</ul>
+			</nav>
+
+			<!-- Modal Information Box -->
+			<div class="overlay" id="modal">
+				<div class="content">
+					<h3>How does this work?</h3>
+					<div>
+						<p>This is a number guessing game.</p>
+						<ul>
+							<li>1. <strong>The computer picks a random number</strong> between 1 to 100.</li>
+							<li>2. <strong>You make guesses</strong> until you hit the correct number.</li>
+							<li>3. <strong>You get feedback</strong> on how close ("hot") or far ("cold") your guess is from the random number.</li>
+						</ul>
+						<br/>
+						<a class="close" href="#">let's play!</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- logo text -->
+			<h1>can you guess the random number?</h1>
+
+		</header>
+
+		<section class="game"> <!-- Guessing Section -->
+
+			<h2 id="feedback">make your guess!</h2>
+
+			<form onsubmit="return false;">
+				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="enter your guess" required/>
+      			<input type="submit" id="guessButton" class="button" name="submit" value="guess"/>
+			</form>
+
+      		<p>guess number: <span id="count">0</span></p>
+
+			<ul id="guessList" class="guessBox clearfix">
+
+			</ul>
+
+		</section>
+	</body>
+</html>

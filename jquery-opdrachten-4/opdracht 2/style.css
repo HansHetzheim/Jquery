@@ -1,0 +1,8 @@
+.result{
+  width: 50px;
+  height: 20px;
+}
+
+label, input, button, select{
+  margin: 10px;
+}
